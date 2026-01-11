@@ -1,0 +1,179 @@
+syntax = "proto3";
+
+package msg;
+
+message Heartbeat {
+  string type = 1;     // "heartbeat", "prepare", "accept", etc.
+  int32 sender_id = 2;
+}
+
+message Ack {
+  string type=1;
+  int32 seq_num=2;
+  int32 sender_id=3;
+}
+
+message Command {
+  string type=1;
+  int32 seq_num=2;
+}
+
+message Clients {
+  string c1=1;
+  string c2=2;
+}
+
+message Transaction {
+  Clients c=1;
+  int32 amt=2;
+  int32 unique=3;
+}
+
+message Ballot {
+  int32 ballot_num=1;
+  int32 sender_id=2;
+}
+
+message LogMsg {
+  Ballot b=1;
+  int32 seq_num=2;
+  Transaction tns=3;
+}
+
+message PrePrepare {
+  string type=1;
+  Ballot b=2;
+  int32 seq_num=3;
+  bytes digest=4;
+  Transaction tns=5;
+  bytes signature=6;
+}
+
+message Prepare {
+  string type=1;
+  Ballot b=2;
+  int32 seq_num=3;
+  bytes digest=4;
+  bytes signature=5;
+}
+
+message PrepareCertificate {
+  Ballot b=1;
+  int32 seq_num=2;
+  int32 sender_id=3;
+  repeated Prepare prepares=4;
+}
+
+message CommitLeader {
+  Ballot b = 1;
+  int32 seq_num = 2;
+  bytes digest = 3;
+  int32 sender_id = 4;
+  bytes signature = 5;
+}
+
+message CommitCertificate {
+  Ballot b = 1;
+  int32 seq_num = 2;
+  int32 sender_id = 3;
+  repeated CommitLeader commits = 4;
+}
+
+message ViewChange {
+  Ballot b = 1;
+  repeated PrepareCertificate prepared = 2;
+  repeated CommitCertificate committed = 3;
+}
+
+message NewView {
+  Ballot b = 1;
+  repeated ViewChange view_changes = 2;
+  repeated PrepareCertificate prepared = 3;
+  repeated CommitCertificate committed = 4;
+}
+
+message Acknowledge {
+    bool vote = 1;
+    Ballot b=2;
+    repeated LogMsg log=3;
+}
+
+message NewLogView {
+  Ballot b=1;
+  repeated LogMsg log=2;
+}
+
+message Accept {
+  Ballot b=1;
+  int32 seq_num=2;
+  Transaction tns=3;
+}
+
+message Accepted {
+  Ballot b=1;
+  int32 seq_num=2;
+  Transaction tns=3;
+  int32 sender_id=4;
+}
+
+message Commit {
+  Ballot b=1;
+  int32 seq_num=2;
+  Transaction tns = 3;
+}
+
+message ClientTransaction {
+  Transaction tns=1;
+  int32 c1=2;
+  int32 unique=3;
+  string msg=4;
+}
+
+message TransCompleted {
+  Ballot b=1;
+  int32 c1=2;
+  int32 unique=3;
+  int32 sender_id=4;
+  bool r=5;
+}
+
+message TransAck {
+  int32 leader=1;
+  int32 unique=2;
+}
+
+message ClientReadRequest {
+  int32 requester_id = 1;
+  string key = 2;
+}
+
+message ClientReadReplyEntry {
+  int32 sender_id = 1;
+  string key = 2;
+  int32 amount = 3;
+  bool found = 4;
+}
+
+message ClientReadReply {
+  repeated ClientReadReplyEntry entries = 1;
+}
+
+service NodeService {
+  rpc SendPrePrepare(PrePrepare) returns (Acknowledge);
+  rpc SendPrepare(Prepare) returns (Acknowledge);
+  rpc SendPrepareLeader(Prepare) returns (Ack);
+  rpc SendPrepareFollower(PrepareCertificate) returns (Ack);
+  rpc SendCommitLeader(CommitLeader) returns (Ack);
+  rpc SendCommitFollower(CommitCertificate) returns (Ack);
+  rpc SendViewChange(ViewChange) returns (Ack);
+  rpc SendNewView(NewView) returns (Ack);
+  rpc SendNewLogView(NewLogView) returns (stream Accepted);
+  rpc SendAccept(Accept) returns (Accepted);
+  rpc SendCommit(Commit) returns (Ack);
+  rpc SendHeartbeat(Heartbeat) returns (Ack);
+  rpc ActionCommand(Command) returns (Ack);
+  rpc SendClientTransaction(ClientTransaction) returns (TransAck);
+  rpc SendClientReset(ClientTransaction) returns (TransAck);
+  rpc SendTransCompleted(TransCompleted) returns (Ack);
+  rpc SendClientRead(ClientReadRequest) returns (ClientReadReply);
+}

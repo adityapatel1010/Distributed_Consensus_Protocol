@@ -1,0 +1,355 @@
+
+================= LOG DUMP (Node 2) =================
+Log[ 0]
+  Ballot     : (1, 1)
+  SeqNum     : 1
+  Transaction: A -> B | Amt=1
+  Unique     : 1768721692
+  Committed     : 1
+--------------------------------------------
+Log[ 1]
+  Ballot     : (1, 1)
+  SeqNum     : 2
+  Transaction: B -> C | Amt=1
+  Unique     : 836008083
+  Committed     : 1
+--------------------------------------------
+Log[ 2]
+  Ballot     : (1, 1)
+  SeqNum     : 3
+  Transaction: D -> E | Amt=1
+  Unique     : 878107883
+  Committed     : 1
+--------------------------------------------
+Log[ 3]
+  Ballot     : (1, 1)
+  SeqNum     : 4
+  Transaction: C -> D | Amt=1
+  Unique     : 2143333252
+  Committed     : 1
+--------------------------------------------
+Log[ 4]
+  Ballot     : (1, 1)
+  SeqNum     : 5
+  Transaction: E -> F | Amt=1
+  Unique     : 1123574725
+  Committed     : 1
+--------------------------------------------
+Log[ 5]
+  Ballot     : (1, 1)
+  SeqNum     : 6
+  Transaction: G -> H | Amt=1
+  Unique     : 143824812
+  Committed     : 1
+--------------------------------------------
+Log[ 6]
+  Ballot     : (1, 1)
+  SeqNum     : 7
+  Transaction: J -> A | Amt=1
+  Unique     : 1600120906
+  Committed     : 1
+--------------------------------------------
+Log[ 7]
+  Ballot     : (1, 1)
+  SeqNum     : 8
+  Transaction: H -> I | Amt=1
+  Unique     : 1179620250
+  Committed     : 1
+--------------------------------------------
+Log[ 8]
+  Ballot     : (1, 1)
+  SeqNum     : 9
+  Transaction: F -> G | Amt=1
+  Unique     : 1221704524
+  Committed     : 1
+--------------------------------------------
+Log[ 9]
+  Ballot     : (1, 1)
+  SeqNum     : 10
+  Transaction: I -> J | Amt=1
+  Unique     : 491696913
+  Committed     : 1
+--------------------------------------------
+Log[10]
+  Ballot     : (1, 1)
+  SeqNum     : 11
+  Transaction: E -> F | Amt=1
+  Unique     : 757594202
+  Committed     : 1
+--------------------------------------------
+Log[11]
+  Ballot     : (1, 1)
+  SeqNum     : 12
+  Transaction: F -> G | Amt=1
+  Unique     : 303464509
+  Committed     : 1
+--------------------------------------------
+Log[12]
+  Ballot     : (1, 1)
+  SeqNum     : 13
+  Transaction: J -> A | Amt=1
+  Unique     : 801584435
+  Committed     : 1
+--------------------------------------------
+Log[13]
+  Ballot     : (1, 1)
+  SeqNum     : 14
+  Transaction: A -> B | Amt=1
+  Unique     : 148073241
+  Committed     : 1
+--------------------------------------------
+Log[14]
+  Ballot     : (1, 1)
+  SeqNum     : 15
+  Transaction: D -> E | Amt=1
+  Unique     : 956688141
+  Committed     : 1
+--------------------------------------------
+Log[15]
+  Ballot     : (1, 1)
+  SeqNum     : 16
+  Transaction: I -> J | Amt=1
+  Unique     : 1598398027
+  Committed     : 1
+--------------------------------------------
+Log[16]
+  Ballot     : (1, 1)
+  SeqNum     : 17
+  Transaction: B -> C | Amt=1
+  Unique     : 1779940033
+  Committed     : 1
+--------------------------------------------
+Log[17]
+  Ballot     : (1, 1)
+  SeqNum     : 18
+  Transaction: G -> H | Amt=1
+  Unique     : 755465522
+  Committed     : 1
+--------------------------------------------
+Log[18]
+  Ballot     : (1, 1)
+  SeqNum     : 19
+  Transaction: H -> I | Amt=1
+  Unique     : 708378535
+  Committed     : 1
+--------------------------------------------
+Log[19]
+  Ballot     : (1, 1)
+  SeqNum     : 20
+  Transaction: C -> D | Amt=1
+  Unique     : 1889253927
+  Committed     : 1
+--------------------------------------------
+Log[20]
+  Ballot     : (1, 1)
+  SeqNum     : 21
+  Transaction: E -> F | Amt=1
+  Unique     : 651774145
+  Committed     : 1
+--------------------------------------------
+Log[21]
+  Ballot     : (1, 1)
+  SeqNum     : 22
+  Transaction: F -> G | Amt=1
+  Unique     : 294193944
+  Committed     : 1
+--------------------------------------------
+Log[22]
+  Ballot     : (1, 1)
+  SeqNum     : 23
+  Transaction: D -> E | Amt=1
+  Unique     : 1745914964
+  Committed     : 1
+--------------------------------------------
+Log[23]
+  Ballot     : (1, 1)
+  SeqNum     : 24
+  Transaction: I -> J | Amt=1
+  Unique     : 1423292264
+  Committed     : 1
+--------------------------------------------
+Log[24]
+  Ballot     : (1, 1)
+  SeqNum     : 25
+  Transaction: J -> A | Amt=1
+  Unique     : 439645467
+  Committed     : 1
+--------------------------------------------
+Log[25]
+  Ballot     : (1, 1)
+  SeqNum     : 26
+  Transaction: A -> B | Amt=1
+  Unique     : 980281522
+  Committed     : 1
+--------------------------------------------
+Log[26]
+  Ballot     : (1, 1)
+  SeqNum     : 27
+  Transaction: H -> I | Amt=1
+  Unique     : 313738012
+  Committed     : 1
+--------------------------------------------
+Log[27]
+  Ballot     : (1, 1)
+  SeqNum     : 28
+  Transaction: G -> H | Amt=1
+  Unique     : 1419143775
+  Committed     : 1
+--------------------------------------------
+Log[28]
+  Ballot     : (1, 1)
+  SeqNum     : 29
+  Transaction: C -> D | Amt=1
+  Unique     : 677147461
+  Committed     : 1
+--------------------------------------------
+Log[29]
+  Ballot     : (1, 1)
+  SeqNum     : 30
+  Transaction: B -> C | Amt=1
+  Unique     : 47202485
+  Committed     : 1
+--------------------------------------------
+Log[30]
+  Ballot     : (1, 1)
+  SeqNum     : 31
+  Transaction: F -> G | Amt=1
+  Unique     : 921753903
+  Committed     : 1
+--------------------------------------------
+Log[31]
+  Ballot     : (1, 1)
+  SeqNum     : 32
+  Transaction: E -> F | Amt=1
+  Unique     : 1397711639
+  Committed     : 1
+--------------------------------------------
+Log[32]
+  Ballot     : (1, 1)
+  SeqNum     : 33
+  Transaction: I -> J | Amt=1
+  Unique     : 81319794
+  Committed     : 1
+--------------------------------------------
+Log[33]
+  Ballot     : (1, 1)
+  SeqNum     : 34
+  Transaction: H -> I | Amt=1
+  Unique     : 1337690717
+  Committed     : 1
+--------------------------------------------
+Log[34]
+  Ballot     : (1, 1)
+  SeqNum     : 35
+  Transaction: G -> H | Amt=1
+  Unique     : 517804609
+  Committed     : 1
+--------------------------------------------
+Log[35]
+  Ballot     : (1, 1)
+  SeqNum     : 36
+  Transaction: A -> B | Amt=1
+  Unique     : 774912604
+  Committed     : 1
+--------------------------------------------
+Log[36]
+  Ballot     : (1, 1)
+  SeqNum     : 37
+  Transaction: J -> A | Amt=1
+  Unique     : 1871423886
+  Committed     : 1
+--------------------------------------------
+Log[37]
+  Ballot     : (1, 1)
+  SeqNum     : 38
+  Transaction: B -> C | Amt=1
+  Unique     : 664069665
+  Committed     : 1
+--------------------------------------------
+Log[38]
+  Ballot     : (1, 1)
+  SeqNum     : 39
+  Transaction: D -> E | Amt=1
+  Unique     : 1100977771
+  Committed     : 1
+--------------------------------------------
+Log[39]
+  Ballot     : (1, 1)
+  SeqNum     : 40
+  Transaction: C -> D | Amt=1
+  Unique     : 2043024937
+  Committed     : 1
+--------------------------------------------
+Log[40]
+  Ballot     : (1, 1)
+  SeqNum     : 41
+  Transaction: F -> G | Amt=1
+  Unique     : 8152605
+  Committed     : 0
+--------------------------------------------
+Log[41]
+  Ballot     : (1, 1)
+  SeqNum     : 42
+  Transaction: E -> F | Amt=1
+  Unique     : 512143960
+  Committed     : 1
+--------------------------------------------
+Log[42]
+  Ballot     : (1, 1)
+  SeqNum     : 43
+  Transaction: G -> H | Amt=1
+  Unique     : 231745276
+  Committed     : 1
+--------------------------------------------
+Log[43]
+  Ballot     : (1, 1)
+  SeqNum     : 44
+  Transaction: I -> J | Amt=1
+  Unique     : 1795188438
+  Committed     : 1
+--------------------------------------------
+Log[44]
+  Ballot     : (1, 1)
+  SeqNum     : 45
+  Transaction: C -> D | Amt=1
+  Unique     : 2136487128
+  Committed     : 1
+--------------------------------------------
+Log[45]
+  Ballot     : (1, 1)
+  SeqNum     : 46
+  Transaction: H -> I | Amt=1
+  Unique     : 1547001713
+  Committed     : 1
+--------------------------------------------
+Log[46]
+  Ballot     : (1, 1)
+  SeqNum     : 47
+  Transaction: J -> A | Amt=1
+  Unique     : 1180682492
+  Committed     : 1
+--------------------------------------------
+Log[47]
+  Ballot     : (1, 1)
+  SeqNum     : 48
+  Transaction: B -> C | Amt=1
+  Unique     : 594408158
+  Committed     : 1
+--------------------------------------------
+Log[48]
+  Ballot     : (1, 1)
+  SeqNum     : 49
+  Transaction: D -> E | Amt=1
+  Unique     : 1415114596
+  Committed     : 1
+--------------------------------------------
+Log[49]
+  Ballot     : (1, 1)
+  SeqNum     : 50
+  Transaction: A -> B | Amt=1
+  Unique     : 663291922
+  Committed     : 1
+--------------------------------------------
+============================================
+
+Execution Index : 40

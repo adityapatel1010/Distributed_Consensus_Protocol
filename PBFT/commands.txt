@@ -1,0 +1,8 @@
+For compiling proto
+protoc -I=. --cpp_out=. msg.proto
+protoc -I=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` msg.proto
+
+For compiling pbft.cpp
+g++ pbft.cpp rpc_messages/msg.pb.cc rpc_messages/msg.grpc.pb.cc -o node \
+  -lgrpc++ -lgrpc -lprotobuf -lpthread -ldl -lcryptopp
+

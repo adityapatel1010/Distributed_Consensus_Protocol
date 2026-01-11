@@ -1,0 +1,342 @@
+
+===== NewView Dump (node n2) @ 2025-11-16 21:26:47 =====
+Context : Broadcast new-view for ballot 2
+Ballot  : 2  Leader: n2
+ViewChanges: 5  PreparedCerts: 4  CommitCerts: 4
+-- View Change Entries --
+  [ 0] sender=n1 ballot=2 prepared=4 committed=4
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n4 ballot=2 prepared=0 committed=0
+  [ 4] sender=n5 ballot=2 prepared=0 committed=0
+-- Prepared Certificates --
+  [ 0] seq=2 sender=n1 prepares=4
+       prepare from n2 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       prepare from n4 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       prepare from n3 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       prepare from n5 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+  [ 1] seq=4 sender=n1 prepares=4
+       prepare from n5 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       prepare from n4 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       prepare from n3 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       prepare from n2 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+  [ 2] seq=6 sender=n1 prepares=4
+       prepare from n5 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       prepare from n3 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       prepare from n4 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       prepare from n2 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+  [ 3] seq=8 sender=n1 prepares=4
+       prepare from n4 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+       prepare from n3 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+       prepare from n2 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+       prepare from n5 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+-- Commit Certificates --
+  [ 0] seq=2 sender=n1 commits=4
+       commit from n3 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       commit from n2 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       commit from n4 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       commit from n5 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+  [ 1] seq=4 sender=n1 commits=4
+       commit from n2 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       commit from n4 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       commit from n5 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       commit from n3 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+  [ 2] seq=6 sender=n1 commits=4
+       commit from n4 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       commit from n2 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       commit from n3 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       commit from n5 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+  [ 3] seq=8 sender=n1 commits=4
+       commit from n4 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+       commit from n2 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+       commit from n3 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+       commit from n5 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+-- View Change Messages Observed (local store) --
+  [ 0] sender=n1 ballot=2 prepared=4 committed=4
+     Prepared certificates:
+       seq=2 sender=n1 prepares=4
+         · from n2 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+         · from n4 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+         · from n3 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+         · from n5 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       seq=4 sender=n1 prepares=4
+         · from n5 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+         · from n4 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+         · from n3 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+         · from n2 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       seq=6 sender=n1 prepares=4
+         · from n5 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+         · from n3 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+         · from n4 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+         · from n2 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       seq=8 sender=n1 prepares=4
+         · from n4 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+         · from n3 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+         · from n2 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+         · from n5 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+     Commit certificates:
+       seq=2 sender=n1 commits=4
+         · from n3 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+         · from n2 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+         · from n4 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+         · from n5 seq=2 ballot=1 txn=A->J amt=1 unique=1490139791 digest=32e0bf2f4c3582820fc75d8259aa993c07efd2edc94eae578542ac47d30255b0
+       seq=4 sender=n1 commits=4
+         · from n2 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+         · from n4 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+         · from n5 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+         · from n3 seq=4 ballot=1 txn=B->I amt=1 unique=1311365069 digest=e3dc1413aff8e47c0c4137f0ebc9e4edd12dab6b5756deec72b957b683d7e8d5
+       seq=6 sender=n1 commits=4
+         · from n4 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+         · from n2 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+         · from n3 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+         · from n5 seq=6 ballot=1 txn=C->H amt=1 unique=1866414586 digest=76c4efd7747e43ad84b3a22bca3ab3ab816549b69a57bd4545fa9472b49e31c2
+       seq=8 sender=n1 commits=4
+         · from n4 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+         · from n2 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+         · from n3 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+         · from n5 seq=8 ballot=1 txn=D->G amt=1 unique=525221828 digest=22b60374500c5714d6bf5affd7188159da62febd5c7513bb7c8203a5394a3da9
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n4 ballot=2 prepared=0 committed=0
+  [ 4] sender=n5 ballot=2 prepared=0 committed=0
+===== End NewView Dump =====
+
+===== NewView Dump (node n2) @ 2025-11-16 21:29:20 =====
+Context : Broadcast new-view for ballot 2
+Ballot  : 2  Leader: n2
+ViewChanges: 5  PreparedCerts: 4  CommitCerts: 4
+-- View Change Entries --
+  [ 0] sender=n1 ballot=2 prepared=4 committed=4
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n4 ballot=2 prepared=0 committed=0
+  [ 4] sender=n6 ballot=2 prepared=0 committed=0
+-- Prepared Certificates --
+  [ 0] seq=2 sender=n1 prepares=4
+       prepare from n4 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       prepare from n2 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       prepare from n3 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       prepare from n5 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+  [ 1] seq=4 sender=n1 prepares=4
+       prepare from n2 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       prepare from n5 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       prepare from n4 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       prepare from n3 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+  [ 2] seq=6 sender=n1 prepares=4
+       prepare from n5 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       prepare from n2 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       prepare from n3 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       prepare from n4 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+  [ 3] seq=8 sender=n1 prepares=4
+       prepare from n5 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+       prepare from n2 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+       prepare from n3 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+       prepare from n4 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+-- Commit Certificates --
+  [ 0] seq=2 sender=n1 commits=4
+       commit from n3 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       commit from n5 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       commit from n2 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       commit from n4 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+  [ 1] seq=4 sender=n1 commits=4
+       commit from n5 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       commit from n4 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       commit from n2 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       commit from n3 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+  [ 2] seq=6 sender=n1 commits=4
+       commit from n4 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       commit from n2 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       commit from n5 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       commit from n3 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+  [ 3] seq=8 sender=n1 commits=4
+       commit from n5 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+       commit from n2 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+       commit from n4 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+       commit from n3 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+-- View Change Messages Observed (local store) --
+  [ 0] sender=n1 ballot=2 prepared=4 committed=4
+     Prepared certificates:
+       seq=2 sender=n1 prepares=4
+         · from n4 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+         · from n2 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+         · from n3 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+         · from n5 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       seq=4 sender=n1 prepares=4
+         · from n2 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+         · from n5 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+         · from n4 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+         · from n3 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       seq=6 sender=n1 prepares=4
+         · from n5 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+         · from n2 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+         · from n3 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+         · from n4 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       seq=8 sender=n1 prepares=4
+         · from n5 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+         · from n2 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+         · from n3 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+         · from n4 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+     Commit certificates:
+       seq=2 sender=n1 commits=4
+         · from n3 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+         · from n5 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+         · from n2 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+         · from n4 seq=2 ballot=1 txn=A->B amt=1 unique=623375607 digest=224705bd7e54be5920997e4aea1fbb69f0e97f42f6835c7a0919da63566b5834
+       seq=4 sender=n1 commits=4
+         · from n5 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+         · from n4 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+         · from n2 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+         · from n3 seq=4 ballot=1 txn=B->C amt=2 unique=730740130 digest=715ce6fad43e929b0e3093a6ed4949e929ba50aef5be621e978dfc67428f8932
+       seq=6 sender=n1 commits=4
+         · from n4 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+         · from n2 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+         · from n5 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+         · from n3 seq=6 ballot=1 txn=C->D amt=3 unique=1151948760 digest=c0f8951655eab0fca109e9cf413feb1cd06eec4851384c672dc4778a6203fa1b
+       seq=8 sender=n1 commits=4
+         · from n5 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+         · from n2 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+         · from n4 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+         · from n3 seq=8 ballot=1 txn=D->E amt=4 unique=919901475 digest=483b3acbacf7958d8d6635659f022be1ea267d2c00477e6fcc35fe68069e3b5f
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n4 ballot=2 prepared=0 committed=0
+  [ 4] sender=n6 ballot=2 prepared=0 committed=0
+===== End NewView Dump =====
+
+===== NewView Dump (node n2) @ 2025-11-16 21:31:54 =====
+Context : Broadcast new-view for ballot 2
+Ballot  : 2  Leader: n2
+ViewChanges: 5  PreparedCerts: 0  CommitCerts: 0
+-- View Change Entries --
+  [ 0] sender=n1 ballot=2 prepared=0 committed=0
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n4 ballot=2 prepared=0 committed=0
+  [ 4] sender=n5 ballot=2 prepared=0 committed=0
+-- View Change Messages Observed (local store) --
+  [ 0] sender=n1 ballot=2 prepared=0 committed=0
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n4 ballot=2 prepared=0 committed=0
+  [ 4] sender=n5 ballot=2 prepared=0 committed=0
+===== End NewView Dump =====
+
+===== NewView Dump (node n2) @ 2025-11-16 21:33:36 =====
+Context : Broadcast new-view for ballot 2
+Ballot  : 2  Leader: n2
+ViewChanges: 5  PreparedCerts: 4  CommitCerts: 4
+-- View Change Entries --
+  [ 0] sender=n1 ballot=2 prepared=4 committed=4
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n6 ballot=2 prepared=0 committed=0
+  [ 4] sender=n7 ballot=2 prepared=0 committed=0
+-- Prepared Certificates --
+  [ 0] seq=2 sender=n1 prepares=4
+       prepare from n4 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       prepare from n2 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       prepare from n3 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       prepare from n7 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+  [ 1] seq=4 sender=n1 prepares=4
+       prepare from n4 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       prepare from n3 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       prepare from n2 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       prepare from n7 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+  [ 2] seq=6 sender=n1 prepares=4
+       prepare from n4 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       prepare from n3 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       prepare from n2 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       prepare from n7 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+  [ 3] seq=8 sender=n1 prepares=4
+       prepare from n3 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+       prepare from n2 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+       prepare from n4 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+       prepare from n7 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+-- Commit Certificates --
+  [ 0] seq=2 sender=n1 commits=4
+       commit from n7 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       commit from n3 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       commit from n4 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       commit from n2 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+  [ 1] seq=4 sender=n1 commits=4
+       commit from n4 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       commit from n3 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       commit from n2 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       commit from n7 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+  [ 2] seq=6 sender=n1 commits=4
+       commit from n4 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       commit from n3 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       commit from n2 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       commit from n7 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+  [ 3] seq=8 sender=n1 commits=4
+       commit from n4 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+       commit from n3 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+       commit from n7 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+       commit from n2 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+-- View Change Messages Observed (local store) --
+  [ 0] sender=n1 ballot=2 prepared=4 committed=4
+     Prepared certificates:
+       seq=2 sender=n1 prepares=4
+         · from n4 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+         · from n2 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+         · from n3 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+         · from n7 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       seq=4 sender=n1 prepares=4
+         · from n4 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+         · from n3 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+         · from n2 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+         · from n7 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       seq=6 sender=n1 prepares=4
+         · from n4 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+         · from n3 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+         · from n2 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+         · from n7 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       seq=8 sender=n1 prepares=4
+         · from n3 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+         · from n2 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+         · from n4 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+         · from n7 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+     Commit certificates:
+       seq=2 sender=n1 commits=4
+         · from n7 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+         · from n3 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+         · from n4 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+         · from n2 seq=2 ballot=1 txn=C->D amt=2 unique=1535724165 digest=d3edd1d08d1a99f6af87adf353bfe1e82138b49b9329bbd4f23cf39b62fbc5b2
+       seq=4 sender=n1 commits=4
+         · from n4 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+         · from n3 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+         · from n2 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+         · from n7 seq=4 ballot=1 txn=G->H amt=4 unique=1231331580 digest=d8bd8a8299657c1498cc9af986a1f2434049c7b6139426afdc131918d76a9475
+       seq=6 sender=n1 commits=4
+         · from n4 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+         · from n3 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+         · from n2 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+         · from n7 seq=6 ballot=1 txn=A->B amt=1 unique=1567801554 digest=b112c43b381f5b45dd320fa62d0349449e353bc34f2e93fdb27cf4491c72273c
+       seq=8 sender=n1 commits=4
+         · from n4 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+         · from n3 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+         · from n7 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+         · from n2 seq=8 ballot=1 txn=E->F amt=3 unique=1118954855 digest=df0ec99f03100f8508d9861958b19f207bc73249f40c38eb664bfa5894a8af8e
+  [ 1] sender=n2 ballot=2 prepared=0 committed=0
+  [ 2] sender=n3 ballot=2 prepared=0 committed=0
+  [ 3] sender=n6 ballot=2 prepared=0 committed=0
+  [ 4] sender=n7 ballot=2 prepared=0 committed=0
+===== End NewView Dump =====
+
+===== NewView Dump (node n3) @ 2025-11-16 21:36:31 =====
+Context : Broadcast new-view for ballot 3
+Ballot  : 3  Leader: n3
+ViewChanges: 5  PreparedCerts: 0  CommitCerts: 0
+-- View Change Entries --
+  [ 0] sender=n3 ballot=3 prepared=0 committed=0
+  [ 1] sender=n4 ballot=3 prepared=0 committed=0
+  [ 2] sender=n5 ballot=3 prepared=0 committed=0
+  [ 3] sender=n6 ballot=3 prepared=0 committed=0
+  [ 4] sender=n7 ballot=3 prepared=0 committed=0
+-- View Change Messages Observed (local store) --
+  [ 0] sender=n3 ballot=3 prepared=0 committed=0
+  [ 1] sender=n4 ballot=3 prepared=0 committed=0
+  [ 2] sender=n5 ballot=3 prepared=0 committed=0
+  [ 3] sender=n6 ballot=3 prepared=0 committed=0
+  [ 4] sender=n7 ballot=3 prepared=0 committed=0
+===== End NewView Dump =====

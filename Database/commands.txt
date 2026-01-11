@@ -1,0 +1,11 @@
+For compiling proto
+protoc -I=. --cpp_out=. msg.proto
+protoc -I=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` msg.proto
+
+For compiling node_async.cpp
+g++ node_async.cpp rpc_messages/msg.pb.cc rpc_messages/msg.grpc.pb.cc -o node \
+  -lgrpc++ -lgrpc -lprotobuf -lpthread -ldl
+
+For compiling node_sync.cpp
+g++ node_sync.cpp rpc_messages/msg.pb.cc rpc_messages/msg.grpc.pb.cc -o node \
+  -lgrpc++ -lgrpc -lprotobuf -lpthread -ldl
